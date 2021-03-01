@@ -22,7 +22,7 @@ public class SqsController {
     return sqsService.createQueue(qName);
   }
 
-  @GetMapping("/sqs/queues")
+  @GetMapping("/sqs/queue")
   public List<String> getQueues(final @RequestParam("qName") String qName) {
     return sqsService.listQueue(qName);
   }
