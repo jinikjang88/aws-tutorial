@@ -1,0 +1,19 @@
+bootJar.enabled = false
+jar.enabled = true
+
+
+description = "Amazon SQS Tutorial Server module"
+
+dependencies {
+    compile "org.projectlombok:lombok"
+    annotationProcessor("org.projectlombok:lombok")
+
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+
+    implementation platform('software.amazon.awssdk:bom:2.15.20')
+
+    // AWS
+    implementation 'software.amazon.awssdk:sqs'
+    //--------------------------------------------------------------------------------------------------
+}

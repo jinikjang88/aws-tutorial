@@ -1,0 +1,3 @@
+rootProject.name = 'aws_projects'
+
+include 'sqs'

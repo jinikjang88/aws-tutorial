@@ -1,0 +1,18 @@
+### create Queue
+POST http://localhost:8080/sqs/queue?qName=testQ
+
+
+### get Queue Url
+GET http://localhost:8080/sqs/queues?qName=testQ
+
+
+### get Queue List
+GET http://localhost:8080/sqs/queues?qName=
+
+
+### send Message
+POST http://localhost:8080/sqs/queue/message?qName=testQ&message=testMessage
+
+
+### Get Messages
+GET http://localhost:8080/sqs/queue/message?qName=testQ
